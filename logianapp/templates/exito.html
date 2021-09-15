@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block titulo %}Exito{% endblock %}
+
+{% block contenido %}
+<div class="row p-5">
+    <div class="col-md-12">
+        <h1><b>¡Exito! Bienvenid@: {{request.session.usuario.name}}</b></h1>
+        <a type="button" class="btn btn-danger" href="/salir">cerrar sesión</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block libreria %}
+{% endblock %}
